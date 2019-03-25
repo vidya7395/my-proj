@@ -1,0 +1,93 @@
+/**       
+    * PRIMARY COLORS
+ **/
+
+$primary: #fdaf00;
+$primary-dark: darken($primary,15%);
+$primary-light: lighten($primary,10%);
+
+/**        
+      *SECONDARY COLORS
+ **/
+
+$secondary-dark: #3B5065;
+$secondary: #73dde9;
+$secondary-light: #6784D2;
+/**        
+      *ALERT COLORS
+ **/
+ $danger: #fb3623;
+
+$danger-dark: darken($danger, 10%);
+/**        
+      *WARNING COLORS
+ **/
+ $warning: #ffa843;
+$warning-dark: darken($warning, 10%);
+/**  
+   *SUCCESS COLORS
+ **/
+
+$success: #5abd97;
+/**       
+      *OTHER COLORS
+ **/
+
+$regular: #a8a8a8;
+$dark: #1a1a1a;
+$white: #fff;
+$gray: #a8a8a8;
+$gray-accent: #9599a7;
+$theme-colors: ( "primary-dark": $primary-dark, "primary": $primary, "primary-light": $primary-light, "secondary": $secondary, "secondary-light": $secondary-light, "secondary-dark": $secondary-dark, "warning": $warning, "warning-dark": $warning-dark, "danger": $danger, "danger-dark": $danger-dark, "dark": $dark, "regular": $regular, "gray": $gray, "gray-accent": $gray-accent, "success":$success);
+/* 
+common box-shadow
+*/
+
+
+/** 
+ Fonts family 
+**/
+
+$font-light: 'robotolight';
+$font-regular: 'robotoregular';
+$font-medium: 'robotomedium';
+$font-semi-bold: 'robotosemi-bold';
+$font-bold: 'robotobold';
+$font-icon:"app-icons";
+/* 
+  *Common Border radius
+*/
+
+$border-radius: 3px;
+/* 
+  *z-index
+*/
+
+$z-header: 2000;
+$sidebar: 2002;
+$overlay: 2001;
+$z-filter: 201;
+$z-loader: 9999;
+$z-table-header: 200;
+/* 
+  *FONT-SIZE
+*/
+$font-xs: 10px;
+$font-sm: 12px;
+$font-base: 14px;
+$font-m: 15px;
+$font-lg: 16px;
+$font-xl: 20px;
+$font-xxl: 22px;
+$font-xxxl: 24px;
+$font-icon: 25px;
+$font-icon-lg: 26px;
+
+/* Setting calender theme */
+$theme-list: ( 'default': $primary, 'green':$primary, );
+
+/* Toastr theme*/
+$theme-toastr:("success": $success, "info": $secondary, "error":$danger, "warning": $warning);
+
+/* Responsiveness breakpoints */
+$breakpoints: ( "phone": 400px, "phone-wide": 480px, "phablet": 560px, "tablet-small": 640px, "tablet": 768px,"laptops":992, "tablet-wide": 1024px, "laptop-mini": 1248px, "laptop": 1366px, "desktop-wide": 1440px, "desktop-xl":1600px, );
