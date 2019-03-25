@@ -1,0 +1,27 @@
+@import "../../assets/scss/core/variables";
+#container {
+    padding:2em;
+
+    #list {
+        padding:1em;
+        display:block;
+        background:rgba($regular, .2);
+        margin-bottom:10px;
+    }
+
+    button {
+        // border:none;
+        margin-bottom:20px;
+        padding:10px;
+        // background: blueviolet;
+        color: #fff;
+    }
+    .col {
+        margin-top: 2em;
+        display:block;
+        padding:10px 0;
+        color:$white;
+        background-color: $warning;
+    }
+
+}

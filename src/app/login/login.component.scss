@@ -1,0 +1,61 @@
+@import "../../assets/scss/core/variables";
+.main-container{
+    height: 80%;
+    position: fixed;
+    right: 27%;
+    top: 11%;
+
+    // transform: translateY(12px);
+}
+.relative{
+    position: relative;
+    top: 0;
+    right:0;
+    left:0;
+    bottom: 0;
+    height: 100%;
+    width:100%;
+}
+.bg-img{
+    background-image: url("../../assets/images/bg-image.jpg");
+    height: 100%;
+    width:100%;
+    background-attachment: fixed;
+    background-size: contain;
+}
+.transparent-bg{
+    height: 100%;
+    width: 50%;
+    top:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: darken(rgba($warning, .7), 20%);
+}
+label{
+    font-size: 16px;
+}
+.translateX{
+    // 
+    animation: example .3s ease-in-out;
+    
+transform: scale(1);    
+}
+@keyframes example{
+    0%{
+        transform: scale(.2);
+    }
+    30%{
+        transform: scale(.4);
+    }
+    50%{
+        transform: scale(.6);
+    }
+    70%{
+        transform: scale(.8);
+    }
+    100%{
+        transform: scale(1);
+    }
+}

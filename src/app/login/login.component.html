@@ -1,0 +1,23 @@
+<div class="main-container container  w-100 px-0" [ngClass]="{'translateX': !isTranslate}">
+  <!-- background -image -->
+  <div class="relative ">
+    <!-- <div class="bg-img"></div> -->
+    <img src="../../assets/images/bg-image.jpg" class="img-fluid rounded h-100" alt="">
+    <section class="position-absolute transparent-bg">
+        <form (submit)="loginUser($event)" class="w-50 d-flex flex-column align-items-center mb-4">
+          <img src="../../assets/images/ldhqqae8n83jjpojnitz.webp" width="50%" alt="">
+          <div class="form-group w-100">
+            <label for="username" class="text-white" [@note]='state'>Username</label>
+            <input type="text"  class="form-control login-input text-white" placeholder="Username" on-focus="toggleFocus()"  id="username">
+          </div>
+          <div class="form-group w-100" >
+            <label for="password"  class="text-white" [@note]='state'>Password</label>
+            <input type="text" class="form-control text-white  login-input" placeholder="Password"  on-focus="toggleFocus()"   id="password">
+          </div>
+          <input type="submit" class="btn btn-primary w-100 my-4 text-white" value="Submit">
+        </form>
+      </section>
+  </div>
+  <!-- form -->
+ 
+</div>

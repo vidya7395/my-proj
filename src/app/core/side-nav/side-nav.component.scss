@@ -1,0 +1,32 @@
+@import "../../../assets/scss/core/variables";
+.profile {
+    width: 100px;
+    height: 100px;
+}
+
+aside {
+    width: 300px;
+}
+
+.profile-info {
+    height: 180px;
+}
+.big-oval{
+    border-bottom-left-radius: 35%;
+    border-bottom-right-radius: 66%;
+    width: 257px;
+    height: 109px;
+    position: absolute;
+    top: 136px;
+    left: -73px;
+
+
+}
+.small-oval{
+    border-top-left-radius: 53%;
+    width: 118px;
+    height: 111px;
+    position: absolute;
+    top: 136px;
+    right: 0;
+}

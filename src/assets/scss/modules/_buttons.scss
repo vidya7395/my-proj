@@ -1,0 +1,33 @@
+.btn {
+    font-size: $font-base;
+    &.btn-primary,
+    &.btn-warning,
+    &.btn-danger,
+    &.btn-light,
+    &.btn-link,
+    &.btn-outline-primary,
+    &.btn-danger {
+        @extend %buttons;
+       
+    }
+    &.btn-transparent {
+        @include padding(all, 0);
+        @include border-radius(all, 50%);
+        background: transparent;
+        &.btn-close{
+            color: $danger;
+            &:hover{
+                background-color: darken($gray, 2%);
+            }
+            
+        }
+    }
+}
+
+/* 
+    *status class
+    *usage: (status-success) class for success status
+*/
+.status {
+    @include status;
+}
